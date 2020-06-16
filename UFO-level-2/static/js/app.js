@@ -25,6 +25,8 @@ button.on("click", function() {
     // Print the fileteredData results into the console
     console.log(filteredData);
 
+    tbody.selectAll("tr").remove();
+
     // This function append the filtereddata results into a table on the html
     filteredData.forEach(function(sightings) {
         console.log(sightings);
